@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Jim Horvath</Authors>
+    <Company />
+    <Product />
+    <PackageProjectUrl>https://github.com/boldog/PocketApiV3</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/boldog/PocketApiV3/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/boldog/PocketApiV3.git</RepositoryUrl>
+    <Description>Small cross-platform library providing a client for the Pocket (http://getpocket.com) API version 3.</Description>
+    <PackageTags>Pocket;CrossPlatform</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+  </ItemGroup>
+
+</Project>
