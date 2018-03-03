@@ -4,12 +4,11 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Jim Horvath</Authors>
     <Company>boldog</Company>
-    <Product />
-    <PackageProjectUrl>https://github.com/boldog/PocketApiV3</PackageProjectUrl>
+    <Description>Provides offline caching and synchronization between the Pocket (http://getpocket.com) online service and a local database.</Description>
     <PackageLicenseUrl>https://github.com/boldog/PocketApiV3/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/boldog/PocketApiV3</PackageProjectUrl>
     <RepositoryUrl>https://github.com/boldog/PocketApiV3.git</RepositoryUrl>
-    <Description>Small cross-platform library providing a client for the Pocket (http://getpocket.com) API version 3.</Description>
-    <PackageTags>Pocket;CrossPlatform</PackageTags>
+    <PackageTags>Pocket;CrossPlatform;Sync;Offline</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -21,7 +20,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PocketApiV3\PocketApiV3.csproj" />
   </ItemGroup>
 
 </Project>
