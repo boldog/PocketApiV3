@@ -17,16 +17,16 @@ namespace PocketApiV3
         [JsonProperty("src")]
         public string Url { get; set; }
 
-        public int Height
+        public int? Height
         {
-            get => int.TryParse(_height, out int x) ? x : 0;
-            set => _height = value.ToString();
+            get => int.TryParse(_height, out int x) ? x : default(int?);
+            set => _height = value?.ToString();
         }
 
-        public int Width
+        public int? Width
         {
-            get => int.TryParse(_width, out int x) ? x : 0;
-            set => _width = value.ToString();
+            get => int.TryParse(_width, out int x) ? x : default(int?);
+            set => _width = value?.ToString();
         }
 
         public PocketVideoType Type
@@ -55,9 +55,6 @@ namespace PocketApiV3
 
         [JsonProperty("vid")]
         public string ExternalId { get; set; }
-
-
-
 
         [JsonProperty("height")]
         string _height;
