@@ -125,7 +125,7 @@ namespace PocketApiV3
         public Dictionary<long, PocketImage> Images { get; set; }
 
         [JsonProperty("tags")]
-        public Dictionary<long, PocketTag> Tags { get; set; }
+        public Dictionary<string, PocketTag> Tags { get; set; }
 
         [JsonProperty("videos")]
         public Dictionary<long, PocketVideo> Videos { get; set; }
