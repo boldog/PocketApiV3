@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace PocketApiV3.Persistence.Data.Models
 {
-    public class SyncResult
+    public interface ICanCopyFrom<T>
     {
-        public int Id { get; set; }
 
-        public DateTime SyncStarted { get; set; }
-        public DateTime? SyncStopped { get; set; }
-
-
-
+        void CopyFrom(T other);
     }
 }

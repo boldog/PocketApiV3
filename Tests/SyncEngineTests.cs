@@ -8,7 +8,7 @@ using Xunit.Abstractions;
 
 namespace Tests
 {
-    public class SyncEngineTests : TestClass
+    public class SyncEngineTests : PocketClientTestClass
     {
         public SyncEngineTests(ITestOutputHelper testOutputHelper)
             : base(testOutputHelper)
@@ -27,6 +27,31 @@ namespace Tests
             var syncEngineSettings = syncEngineSettingsBuilder.Build();
 
             Assert.Equal(syncEngineSettingsBuilder.MinimumTimeBetweenSynchronizationAttempts, syncEngineSettings.MinimumTimeBetweenSynchronizationAttempts);
+        }
+
+        [Fact]
+        public async Task SyncEngineSyncsWithoutErrors()
+        {
+            AssertPocketClientIsValid();
+
+            using (var syncEngine = new SyncEngine(_pocketClient, GetDefaultSyncEngineSettings()))
+            {
+                await syncEngine.Initialize(default);
+                await syncEngine.SynchronizeAsync(default);
+
+                var stats = await syncEngine.GetStatistics(default);
+                Assert.NotEqual(0, stats.CountAll);
+            }
+        }
+
+
+        SyncEngineSettings GetDefaultSyncEngineSettings()
+        {
+            var builder = new SyncEngineSettings.Builder()
+            {
+
+            };
+            return builder.Build();
         }
 
     }

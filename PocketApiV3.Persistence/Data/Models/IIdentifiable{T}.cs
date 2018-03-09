@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace PocketApiV3.Persistence.Data.Models
 {
-    public class SyncEngineStatus
+    public interface IIdentifiable<TIdentifier> where TIdentifier : struct
     {
-
+        TIdentifier Id { get; }
     }
 }

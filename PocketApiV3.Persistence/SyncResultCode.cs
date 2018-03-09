@@ -6,7 +6,9 @@ namespace PocketApiV3.Persistence
 {
     public enum SyncResultCode
     {
-        Completed = 0,
+        Undefined = 0,
+        Completed,
+        SyncAlreadyInProgress,
         MinimumTimeSinceLastSyncNotReached,
     }
 }

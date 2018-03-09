@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace PocketApiV3.Persistence
 {
-    public struct AtomicBoolean
+    struct AtomicBoolean
         : IComparable, IComparable<bool>, IComparable<AtomicBoolean>,
         IEquatable<bool>, IEquatable<AtomicBoolean>
     {
@@ -26,8 +26,8 @@ namespace PocketApiV3.Persistence
         }
 
         /// <summary>
-        /// Sets a new value and returning a boolean indicating if the value was
-        /// already equal to the new value.
+        /// Tries setting a new value, returning a boolean indicating
+        /// whether or not the value changed from its previous value.
         /// </summary>
         /// <param name="newValue"></param>
         /// <returns>TRUE if the value was changed, otherwise FALSE.</returns>

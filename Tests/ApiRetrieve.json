@@ -1,0 +1,300 @@
+{
+  "status": 1,
+  "complete": 1,
+  "list": {
+    "2084279281": {
+      "item_id": "2084279281",
+      "resolved_id": "2084279281",
+      "given_url": "https://tech.slashdot.org/story/18/02/21/2146237/new-lawsuit-accuses-tesla-of-knowingly-selling-defective-vehicles",
+      "given_title": "",
+      "favorite": "0",
+      "status": "0",
+      "time_added": "1519853949",
+      "time_updated": "1519853949",
+      "time_read": "0",
+      "time_favorited": "0",
+      "sort_id": 0,
+      "resolved_title": "New Lawsuit Accuses Tesla of Knowingly Selling Defective Vehicles",
+      "resolved_url": "https://tech.slashdot.org/story/18/02/21/2146237/new-lawsuit-accuses-tesla-of-knowingly-selling-defective-vehicles",
+      "excerpt": "A new lawsuit from a former Tesla employee claims the company knowingly sold defective cars, and that the employee was demoted and eventually fired after reporting the practice to his superiors.",
+      "is_article": "1",
+      "is_index": "0",
+      "has_video": "0",
+      "has_image": "0",
+      "word_count": "310",
+      "tags": {
+        "[\r\n  \\\"tesla\\\"\r\n]": {
+          "item_id": "2084279281",
+          "tag": "[\r\n  \\\"tesla\\\"\r\n]"
+        },
+        "tesla": {
+          "item_id": "2084279281",
+          "tag": "tesla"
+        }
+      },
+      "authors": {
+        "47802700": {
+          "item_id": "2084279281",
+          "author_id": "47802700",
+          "name": "BeauHD",
+          "url": "https://twitter.com/BeauHD"
+        }
+      }
+    },
+    "367150377": {
+      "item_id": "367150377",
+      "resolved_id": "367150377",
+      "given_url": "http://frontendplay.com/",
+      "given_title": "ignored title",
+      "favorite": "0",
+      "status": "0",
+      "time_added": "1519252402",
+      "time_updated": "1519252402",
+      "time_read": "0",
+      "time_favorited": "0",
+      "sort_id": 1,
+      "resolved_title": "frontendplay - stories about .NET and frontend development",
+      "resolved_url": "http://frontendplay.com",
+      "excerpt": "As you can see, I have republished my blog with a new design. It's built with Sandra.Snow (a static site generator written in Nancy) from the awesome Phillip Haydon.  All posts are written in markdown and get automatically compiled to HTML by the generator.",
+      "is_article": "0",
+      "is_index": "1",
+      "has_video": "0",
+      "has_image": "0",
+      "word_count": "861",
+      "tags": {
+        "blog": {
+          "item_id": "367150377",
+          "tag": "blog"
+        },
+        "cee": {
+          "item_id": "367150377",
+          "tag": "cee"
+        },
+        "frontend": {
+          "item_id": "367150377",
+          "tag": "frontend"
+        }
+      }
+    },
+    "728603": {
+      "item_id": "728603",
+      "resolved_id": "728603",
+      "given_url": "https://github.com/",
+      "given_title": "",
+      "favorite": "0",
+      "status": "0",
+      "time_added": "1518823569",
+      "time_updated": "1518823569",
+      "time_read": "0",
+      "time_favorited": "0",
+      "sort_id": 2,
+      "resolved_title": "Build software better, together",
+      "resolved_url": "https://github.com",
+      "excerpt": "GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code, manage projects, and build software alongside millions of other developers.",
+      "is_article": "0",
+      "is_index": "1",
+      "has_video": "0",
+      "has_image": "1",
+      "word_count": "368",
+      "tags": {
+        "code": {
+          "item_id": "728603",
+          "tag": "code"
+        },
+        "github": {
+          "item_id": "728603",
+          "tag": "github"
+        },
+        "social": {
+          "item_id": "728603",
+          "tag": "social"
+        }
+      },
+      "image": {
+        "item_id": "728603",
+        "src": "https://assets-cdn.github.com/images/modules/site/home-illo-team.svg",
+        "width": "0",
+        "height": "0"
+      },
+      "images": {
+        "1": {
+          "item_id": "728603",
+          "image_id": "1",
+          "src": "https://assets-cdn.github.com/images/modules/site/home-illo-team.svg",
+          "width": "0",
+          "height": "0",
+          "credit": "",
+          "caption": ""
+        },
+        "2": {
+          "item_id": "728603",
+          "image_id": "2",
+          "src": "https://assets-cdn.github.com/images/modules/site/home-illo-team-code.svg",
+          "width": "0",
+          "height": "0",
+          "credit": "",
+          "caption": ""
+        },
+        "3": {
+          "item_id": "728603",
+          "image_id": "3",
+          "src": "https://assets-cdn.github.com/images/modules/site/home-illo-team-chaos.svg",
+          "width": "0",
+          "height": "0",
+          "credit": "",
+          "caption": ""
+        },
+        "4": {
+          "item_id": "728603",
+          "image_id": "4",
+          "src": "https://assets-cdn.github.com/images/modules/site/home-illo-team-tools.svg",
+          "width": "0",
+          "height": "0",
+          "credit": "",
+          "caption": ""
+        },
+        "5": {
+          "item_id": "728603",
+          "image_id": "5",
+          "src": "https://assets-cdn.github.com/images/modules/site/home-illo-business.png",
+          "width": "0",
+          "height": "0",
+          "credit": "",
+          "caption": ""
+        }
+      }
+    },
+    "597838": {
+      "item_id": "597838",
+      "resolved_id": "100000172",
+      "given_url": "http://www.valoronline.com.br/",
+      "given_title": "",
+      "favorite": "0",
+      "status": "0",
+      "time_added": "1518823566",
+      "time_updated": "1518823566",
+      "time_read": "0",
+      "time_favorited": "0",
+      "sort_id": 3,
+      "resolved_title": "Assine o Valor Econômico",
+      "resolved_url": "http://www.valor.com.br",
+      "excerpt": "Acesse o índice do jornal impresso e selecione as editorias e matérias que quer ler. Conteúdo exclusivo para assinantes.  Serviço de informação em tempo real do Valor Econômico, o mais influente veículo de economia, negócios e finanças do país.",
+      "is_article": "0",
+      "is_index": "1",
+      "has_video": "0",
+      "has_image": "1",
+      "word_count": "1386",
+      "image": {
+        "item_id": "597838",
+        "src": "http://www.valor.com.br/sites/default/files/imagecache/media_library_300_197/fotoweb/pfprypiat__98_159_2517_1645.peg",
+        "width": "300",
+        "height": "197"
+      },
+      "images": {
+        "1": {
+          "item_id": "597838",
+          "image_id": "1",
+          "src": "http://www.valor.com.br/sites/default/files/imagecache/media_library_300_197/fotoweb/pfprypiat__98_159_2517_1645.peg",
+          "width": "300",
+          "height": "197",
+          "credit": "",
+          "caption": ""
+        },
+        "2": {
+          "item_id": "597838",
+          "image_id": "2",
+          "src": "http://www.valor.com.br/sites/default/files/imagecache/media_library_300_197/fotoweb/1453764379governador_do_amazonas_jos___melo_cassado_alan_marquesfolhapress__601_742_3726_2437.peg",
+          "width": "300",
+          "height": "197",
+          "credit": "",
+          "caption": ""
+        },
+        "3": {
+          "item_id": "597838",
+          "image_id": "3",
+          "src": "http://www.valor.com.br/sites/default/files/imagecache/media_library_300_197/gn/17/05/foto03pol-101-lula-a7_0_0_753_493.jpg",
+          "width": "300",
+          "height": "197",
+          "credit": "",
+          "caption": ""
+        }
+      }
+    },
+    "605921923": {
+      "item_id": "605921923",
+      "resolved_id": "605921923",
+      "given_url": "http://frontendplay.com/story/4015/string-indexer-for-text-resources-in-nancy",
+      "given_title": "",
+      "favorite": "0",
+      "status": "0",
+      "time_added": "1518823566",
+      "time_updated": "1518823568",
+      "time_read": "0",
+      "time_favorited": "0",
+      "sort_id": 4,
+      "resolved_title": "String Indexer for Text Resources in Nancy",
+      "resolved_url": "http://frontendplay.com/story/4015/string-indexer-for-text-resources-in-nancy",
+      "excerpt": "In the last post Build a custom Razor ViewBase in Nancy we have built a ViewBase, which allows us to access new public methods and properties in the views.  The example used a dictionary containing translations.",
+      "is_article": "1",
+      "is_index": "0",
+      "has_video": "0",
+      "has_image": "0",
+      "word_count": "268",
+      "authors": {
+        "9583829": {
+          "item_id": "605921923",
+          "author_id": "9583829",
+          "name": "Tobias Klika",
+          "url": ""
+        }
+      }
+    },
+    "603040239": {
+      "item_id": "603040239",
+      "resolved_id": "603040239",
+      "given_url": "http://frontendplay.com/story/4013/build-a-custom-razor-viewbase-in-nancy",
+      "given_title": "",
+      "favorite": "0",
+      "status": "0",
+      "time_added": "1518823565",
+      "time_updated": "1518823567",
+      "time_read": "0",
+      "time_favorited": "0",
+      "sort_id": 5,
+      "resolved_title": "Build a custom Razor ViewBase in Nancy",
+      "resolved_url": "http://frontendplay.com/story/4013/build-a-custom-razor-viewbase-in-nancy",
+      "excerpt": "This is a simple example on how to pass model data (in this case an anonymous dynamic) to a Razor view using Nancy modules:  You can call this data in the view easily with @Model.Name.",
+      "is_article": "1",
+      "is_index": "0",
+      "has_video": "0",
+      "has_image": "0",
+      "word_count": "362",
+      "authors": {
+        "9583829": {
+          "item_id": "603040239",
+          "author_id": "9583829",
+          "name": "Tobias Klika",
+          "url": ""
+        }
+      }
+    },
+    "510740580": {
+      "item_id": "510740580",
+      "resolved_id": "0",
+      "given_url": "http://de.ign.com/m/feature/21608/die-20-besten-kurzfilme-des-jahres-2013?bust=1",
+      "given_title": "",
+      "favorite": "0",
+      "status": "0",
+      "time_added": "1518823563",
+      "time_updated": "1518823563",
+      "time_read": "0",
+      "time_favorited": "0",
+      "sort_id": 6
+    }
+  },
+  "error": null,
+  "search_meta": {
+    "search_type": "normal"
+  },
+  "since": 1520472378
+}
