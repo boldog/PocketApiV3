@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace PocketApiV3
 {
-    public class ModifyRequest : Request<ModifyResponse>
+    public sealed class ModifyRequest : Request<ModifyResponse>
     {
         public ModifyRequest()
         {

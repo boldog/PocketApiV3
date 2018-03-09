@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace PocketApiV3
 {
-    public class StatisticsResponse : Response
+    public sealed class StatisticsResponse : Response
     {
         [JsonProperty("count_list")]
         public int CountAll { get; set; }

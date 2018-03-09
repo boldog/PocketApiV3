@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace PocketApiV3
 {
-    public class AuthenticateStep1Response : Response
+    public sealed class AuthenticateStep1Response : Response
     {
         internal AuthenticateStep1Response() { }
 

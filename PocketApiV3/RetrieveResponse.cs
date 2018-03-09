@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace PocketApiV3
 {
-    public class RetrieveResponse : Response
+    public sealed class RetrieveResponse : Response
     {
         [JsonProperty("complete")]
         public bool IsComplete { get; set; }

@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 
 namespace PocketApiV3
 {
-    public class AuthenticateStep1Request : Request<AuthenticateStep1Response>
+    public sealed class AuthenticateStep1Request : Request<AuthenticateStep1Response>
     {
         /// <summary>
         /// The URL to be called when the authorization process has been

@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace PocketApiV3
 {
-    public class RetrieveRequest : Request<RetrieveResponse>
+    public sealed class RetrieveRequest : Request<RetrieveResponse>
     {
         [JsonProperty("state")]
         public RetrieveState? State { get; set; }
@@ -40,6 +40,11 @@ namespace PocketApiV3
         [JsonProperty("offset")]
         public int? Offset { get; set; }
 
+        public void NextPage(int pageSize)
+        {
+            Offset = (Offset ?? 0) + pageSize;
+            Count = pageSize;
+        }
 
         internal override bool ApiAuthRequired => true;
         internal override string ApiMethod => "get";

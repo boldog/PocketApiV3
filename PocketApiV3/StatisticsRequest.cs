@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace PocketApiV3
 {
-    public class StatisticsRequest : Request<StatisticsResponse>
+    public sealed class StatisticsRequest : Request<StatisticsResponse>
     {
         internal override bool ApiAuthRequired => true;
 
