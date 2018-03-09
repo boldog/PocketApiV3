@@ -10,6 +10,8 @@
     <RepositoryUrl>https://github.com/boldog/PocketApiV3.git</RepositoryUrl>
     <Description>Small cross-platform library providing a client for the Pocket (http://getpocket.com) API version 3.</Description>
     <PackageTags>Pocket;CrossPlatform</PackageTags>
+    <Version>1.0.1</Version>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
