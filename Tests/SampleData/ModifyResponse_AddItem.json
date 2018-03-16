@@ -1,0 +1,84 @@
+{
+  "action_results": [
+    {
+      "item_id": "728603",
+      "normal_url": "https://github.com",
+      "resolved_id": "728603",
+      "extended_item_id": "728603",
+      "resolved_url": "https://github.com/#",
+      "domain_id": "965",
+      "origin_domain_id": "720",
+      "response_code": "200",
+      "mime_type": "text/html",
+      "content_length": "316",
+      "encoding": "utf-8",
+      "date_resolved": "2018-02-05 21:17:11",
+      "date_published": "0000-00-00 00:00:00",
+      "title": "Redirecting",
+      "excerpt": "",
+      "word_count": "0",
+      "innerdomain_redirect": "1",
+      "login_required": "0",
+      "has_image": "0",
+      "has_video": "0",
+      "is_index": "0",
+      "is_article": "0",
+      "used_fallback": "0",
+      "lang": "en",
+      "time_first_parsed": "0",
+      "authors": [],
+      "images": {
+        "1": {
+          "item_id": "728603",
+          "image_id": "1",
+          "src": "https://assets-cdn.github.com/images/modules/site/home-illo-team.svg",
+          "width": "0",
+          "height": "0",
+          "credit": "",
+          "caption": ""
+        },
+        "2": {
+          "item_id": "728603",
+          "image_id": "2",
+          "src": "https://assets-cdn.github.com/images/modules/site/home-illo-team-code.svg",
+          "width": "0",
+          "height": "0",
+          "credit": "",
+          "caption": ""
+        },
+        "3": {
+          "item_id": "728603",
+          "image_id": "3",
+          "src": "https://assets-cdn.github.com/images/modules/site/home-illo-team-chaos.svg",
+          "width": "0",
+          "height": "0",
+          "credit": "",
+          "caption": ""
+        },
+        "4": {
+          "item_id": "728603",
+          "image_id": "4",
+          "src": "https://assets-cdn.github.com/images/modules/site/home-illo-team-tools.svg",
+          "width": "0",
+          "height": "0",
+          "credit": "",
+          "caption": ""
+        },
+        "5": {
+          "item_id": "728603",
+          "image_id": "5",
+          "src": "https://assets-cdn.github.com/images/modules/site/home-illo-business.png",
+          "width": "0",
+          "height": "0",
+          "credit": "",
+          "caption": ""
+        }
+      },
+      "videos": [],
+      "top_image_url": "https://assets-cdn.github.com/images/modules/open_graph/github-logo.png",
+      "resolved_normal_url": "http://github.com",
+      "given_url": null
+    }
+  ],
+  "status": 1
+}

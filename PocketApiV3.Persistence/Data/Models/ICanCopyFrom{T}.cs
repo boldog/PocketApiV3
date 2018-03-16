@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PocketApiV3.Persistence.Data.Models
 {
     public interface ICanCopyFrom<T>
     {
 
-        void CopyFrom(T other);
+        bool CopyFrom(T other);
     }
 }

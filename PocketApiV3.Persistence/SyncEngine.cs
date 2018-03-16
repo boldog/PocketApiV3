@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 
 namespace PocketApiV3.Persistence
 {
@@ -18,7 +17,7 @@ namespace PocketApiV3.Persistence
         {
             _pocketClient = pocketClient;
             _settings = settings;
-            _syncDbContext = new Data.SyncDbContext();
+            //_syncDbContext = new Data.SyncDbContext();
         }
 
         public bool IsInitialized => _isInitializeCompleted;
@@ -28,32 +27,34 @@ namespace PocketApiV3.Persistence
 
         public async Task Initialize(CancellationToken cancellationToken)
         {
-            if (_isInitializeStarted.TrySet(true))
-            {
-                try
-                {
-                    await _syncDbContext.Database.MigrateAsync(cancellationToken);
-                    _isInitializeCompleted.Set(true);
-                }
-                catch
-                {
-                    _isInitializeStarted.Set(false);
-                    throw;
-                }
-            }
+            throw new NotImplementedException();
+            //if (_isInitializeStarted.TrySet(true))
+            //{
+            //    try
+            //    {
+            //        await _syncDbContext.Database.MigrateAsync(cancellationToken);
+            //        _isInitializeCompleted.Set(true);
+            //    }
+            //    catch
+            //    {
+            //        _isInitializeStarted.Set(false);
+            //        throw;
+            //    }
+            //}
         }
 
         public async Task<StatisticsResponse> GetStatistics(CancellationToken cancellationToken)
         {
-            var total = await _syncDbContext.Items.CountAsync(cancellationToken);
-            var read = await _syncDbContext.Items.CountAsync(x => x.TimeRead != null, cancellationToken);
-            var result = new StatisticsResponse
-            {
-                CountAll = total,
-                CountRead = read,
-                CountUnread = total - read
-            };
-            return result;
+            throw new NotImplementedException();
+            //var total = await _syncDbContext.Items.CountAsync(cancellationToken);
+            //var read = await _syncDbContext.Items.CountAsync(x => x.TimeRead != null, cancellationToken);
+            //var result = new StatisticsResponse
+            //{
+            //    CountAll = total,
+            //    CountRead = read,
+            //    CountUnread = total - read
+            //};
+            //return result;
         }
 
         public Task PersistRequest(AddRequest addRequest, CancellationToken cancellationToken)
@@ -90,6 +91,8 @@ namespace PocketApiV3.Persistence
 
         async Task<SyncResult> SynchronizeAsyncCore(SyncResult.Builder syncResultBuilder, CancellationToken cancellationToken)
         {
+            throw new NotImplementedException();
+            /*
             // Get latest state variables from DB
             var stateVars = LoadSyncEngineStateVariables();
 
@@ -133,6 +136,7 @@ namespace PocketApiV3.Persistence
             syncResultBuilder.Code = SyncResultCode.Completed;
             var syncResult = syncResultBuilder.Build();
             return syncResult;
+            */
         }
 
 
@@ -144,41 +148,43 @@ namespace PocketApiV3.Persistence
         AtomicBoolean _isInitializeCompleted;
         AtomicBoolean _isSyncInProgress;
 
-        Data.SyncDbContext _syncDbContext;
+        //Data.SyncDbContext _syncDbContext;
 
         const int SyncPageSize = 200;
         const int SyncEngineStateVariablesSingletonId = 1;
 
         protected Data.Models.SyncEngineStateVariables LoadSyncEngineStateVariables()
         {
-            using (var context = new Data.SyncDbContext())
-            {
-                var result = context.SyncEngineStateVariables.Find(SyncEngineStateVariablesSingletonId);
-                if (result == null)
-                {
-                    result = new Data.Models.SyncEngineStateVariables() { Id = SyncEngineStateVariablesSingletonId };
-                    context.SyncEngineStateVariables.Add(result);
-                    context.SaveChanges();
-                }
-                return result;
-            }
+            throw new NotImplementedException();
+            //using (var context = new Data.SyncDbContext())
+            //{
+            //    var result = context.SyncEngineStateVariables.Find(SyncEngineStateVariablesSingletonId);
+            //    if (result == null)
+            //    {
+            //        result = new Data.Models.SyncEngineStateVariables() { Id = SyncEngineStateVariablesSingletonId };
+            //        context.SyncEngineStateVariables.Add(result);
+            //        context.SaveChanges();
+            //    }
+            //    return result;
+            //}
         }
 
         protected void SaveSyncEngineStateVariables(Data.Models.SyncEngineStateVariables syncEngineStateVariables)
         {
-            syncEngineStateVariables.Id = SyncEngineStateVariablesSingletonId;
-            using (var context = new Data.SyncDbContext())
-            {
-                context.Entry(syncEngineStateVariables).State = EntityState.Modified;
-                context.SaveChanges();
-            }
+            throw new NotImplementedException();
+            //syncEngineStateVariables.Id = SyncEngineStateVariablesSingletonId;
+            //using (var context = new Data.SyncDbContext())
+            //{
+            //    context.Entry(syncEngineStateVariables).State = EntityState.Modified;
+            //    context.SaveChanges();
+            //}
         }
 
         protected virtual void Dispose(bool isDisposing)
         {
             if (isDisposing)
             {
-                Interlocked.Exchange(ref _syncDbContext, null)?.Dispose();
+                //Interlocked.Exchange(ref _syncDbContext, null)?.Dispose();
             }
         }
 

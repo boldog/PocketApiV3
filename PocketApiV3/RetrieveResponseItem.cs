@@ -13,7 +13,7 @@ namespace PocketApiV3
         /// to perform any actions through the v3/modify endpoint.
         /// </summary>
         [JsonProperty("item_id")]
-        public long? ItemId { get; set; }
+        public long ItemId { get; set; }
 
         /// <summary>
         /// A unique identifier similar to the item_id but is unique to the
@@ -26,7 +26,7 @@ namespace PocketApiV3
         /// resolved.
         /// </summary>
         [JsonProperty("resolved_id")]
-        public long? ResolvedId { get; set; }
+        public long ResolvedId { get; set; }
 
         /// <summary>
         /// The actual url that was saved with the item. This url should be used
@@ -117,6 +117,7 @@ namespace PocketApiV3
 
         [JsonProperty("authors")]
         public Dictionary<long, PocketAuthor> Authors { get; set; }
+        //public List<PocketAuthor> Authors { get; set; }
 
         [JsonProperty("image")]
         public PocketImage Image { get; set; }

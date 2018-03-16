@@ -21,6 +21,7 @@ namespace PocketApiV3
                 Converters =
                 {
                     new BooleanConverter(),
+                    //new DateTimeUnixSecondsConverter(),
                     new DateTimeOffsetUnixSecondsConverter(),
                     new NullableBooleanConverter(),
                     new NullableDateTimeOffsetUnixSecondsConverter(),
@@ -71,6 +72,28 @@ namespace PocketApiV3
             }
         }
 
+        //class DateTimeUnixSecondsConverter : JsonConverter
+        //{
+        //    public override bool CanConvert(Type objectType) =>
+        //        objectType == typeof(DateTime);
+
+        //    public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+        //    {
+        //        if (reader.Value == null)
+        //            return default(DateTime);
+
+        //        long seconds = Convert.ToInt64(reader.Value);
+        //        return DateTimeOffset.FromUnixTimeSeconds(seconds).DateTime;
+        //    }
+
+        //    public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+        //    {
+        //        var typedValue = (DateTime)value;
+        //        var dateTimeOffset = new DateTimeOffset(typedValue);
+        //        writer.WriteValue(dateTimeOffset.ToUnixTimeSeconds());
+        //    }
+        //}
+
         class DateTimeOffsetUnixSecondsConverter : JsonConverter
         {
             public override bool CanConvert(Type objectType) =>
@@ -90,7 +113,6 @@ namespace PocketApiV3
                 var typedValue = (DateTimeOffset)value;
                 writer.WriteValue(typedValue.ToUnixTimeSeconds());
             }
-
         }
 
         class IPocketActionResultJsonConverter : JsonConverter

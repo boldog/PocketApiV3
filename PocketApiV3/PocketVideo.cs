@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 namespace PocketApiV3
 {
     [JsonObject(MemberSerialization.OptIn)]
-    public class PocketVideo
+    public class PocketVideo : IPocketVideoData
     {
         [JsonProperty("item_id")]
         public long? ItemId { get; set; }
@@ -61,7 +61,5 @@ namespace PocketApiV3
 
         [JsonProperty("width")]
         string _width;
-
-
     }
 }

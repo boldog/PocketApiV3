@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 namespace PocketApiV3
 {
     [JsonObject(MemberSerialization.OptIn)]
-    public class PocketImage
+    public class PocketImage : IPocketImageData
     {
         [JsonProperty("item_id")]
         public long? ItemId { get; set; }
@@ -34,8 +34,6 @@ namespace PocketApiV3
             get => int.TryParse(_width, out int x) ? x : default(int?);
             set => _width = value?.ToString();
         }
-
-
 
         [JsonProperty("height")]
         string _height;
